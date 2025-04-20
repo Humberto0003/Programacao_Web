@@ -1,11 +1,13 @@
-// tailwind.config.js
-const theming = require('tailwindcss-theming');
+import type { Config } from 'tailwindcss'
+import theming from 'tailwindcss-theming'
 
-module.exports = {
+const config: Config = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./app/**/*.{js,ts,jsx,tsx}"
+    './src/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}'
   ],
-  darkMode: 'class',  
+  darkMode: 'class',
   plugins: [theming()],
-};
+}
+
+export default config
